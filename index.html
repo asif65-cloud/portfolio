@@ -2,56 +2,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MD ASIF | Portfolio</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Orbitron', sans-serif;
-      background: linear-gradient(135deg, #0f172a, #1e293b);
-      color: #fff;
-      margin: 0;
-      padding: 0;
+      font-family: 'Space Grotesk', sans-serif;
+      scroll-behavior: smooth;
+      background-color: #0f172a;
+      color: #ffffff;
     }
-    .glow {
-      text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
-    }
-    .social-link:hover {
-      color: #00ffcc;
-      transition: 0.3s ease;
+    .glow:hover {
+      box-shadow: 0 0 15px #00ffff;
+      transition: 0.3s;
     }
   </style>
 </head>
-<body class="flex flex-col items-center justify-center min-h-screen text-center px-4">
+<body class="text-white">
 
-  <div class="mb-8">
-    <img src="profile.jpg" alt="MD ASIF" class="w-32 h-32 rounded-full border-4 border-green-400 shadow-lg mx-auto mb-4" />
-    <h1 class="text-4xl font-bold glow">MD ASIF</h1>
-    <p class="text-lg text-gray-300 mt-2">HTML Developer | BCA Student</p>
-  </div>
+  <!-- Hero Section -->
+  <section class="min-h-screen flex flex-col justify-center items-center text-center px-4 bg-gradient-to-br from-gray-900 to-blue-900" data-aos="fade-down">
+    <img src="profile.jpg" alt="MD ASIF" class="w-32 h-32 rounded-full mb-4 border-4 border-blue-400 shadow-lg" />
+    <h1 class="text-4xl font-bold mb-2">Hi, I'm <span class="text-blue-400">MD ASIF</span></h1>
+    <p class="text-lg text-gray-300">HTML Developer | BCA Student</p>
+  </section>
 
-  <section class="max-w-2xl text-gray-300 mb-10">
-    <h2 class="text-xl font-semibold mb-2 text-green-400">About Me</h2>
-    <p class="mb-2">
-      I’m a passionate HTML developer and BCA student at <strong>Maulana Mazharul Haque Arabic & Persian University, Patna</strong>.
-      I specialize in writing clean and responsive frontend code using HTML and CSS.
-    </p>
-    <p>
-      I’m currently seeking frontend internships and freelance opportunities where I can contribute to building beautiful and accessible web experiences.
+  <!-- About Section -->
+  <section class="p-10 bg-gray-800" data-aos="fade-up">
+    <h2 class="text-2xl font-semibold mb-4">About Me</h2>
+    <p class="text-gray-300 mb-4">
+      I'm a BCA student at Maulana Mazharul Haque Arabic & Persian University, Patna, and a passionate HTML developer. I love building clean and responsive websites. I'm actively looking for internship and freelance opportunities to showcase my frontend skills.
     </p>
   </section>
 
-  <div class="space-y-4 text-lg">
-    <p>📧 <a href="mailto:myteam404@gmail.com" class="text-blue-300 hover:underline">myteam404@gmail.com</a></p>
-    <p>🔗 <a href="https://www.linkedin.com/in/md-asif-488a92258" target="_blank" class="text-blue-400 hover:underline social-link">LinkedIn</a></p>
-    <p>📸 <a href="https://www.instagram.com/pool_of_dead82" target="_blank" class="text-pink-400 hover:underline social-link">Instagram</a></p>
-  </div>
+  <!-- Social Links -->
+  <section class="p-10 text-center bg-gray-900" data-aos="zoom-in-up">
+    <h2 class="text-2xl font-semibold mb-4">Connect with Me</h2>
+    <p class="mb-2">📧 <a href="mailto:myteam404@gmail.com" class="text-blue-300 hover:underline">myteam404@gmail.com</a></p>
+    <p class="mb-2">🔗 <a href="https://www.linkedin.com/in/md-asif-488a92258" target="_blank" class="text-blue-400 hover:underline">LinkedIn</a></p>
+    <p>📸 <a href="https://www.instagram.com/pool_of_dead82" target="_blank" class="text-pink-400 hover:underline">Instagram</a></p>
+  </section>
 
-  <footer class="text-gray-500 text-sm mt-12">
-    &copy; 2025 MD ASIF. All rights reserved.
+  <!-- Footer -->
+  <footer class="text-center text-gray-500 py-4 bg-gray-800">
+    Code portions licensed under the MIT License. © 2025 MD ASIF.
   </footer>
 
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
